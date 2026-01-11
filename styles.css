@@ -131,7 +131,7 @@ li {
         padding: 100px 50px;
     }
     .container.show-nav {
-        transform: rotate(-10deg);
+        transform: rotate(-20deg);
     }
     li {
         font-size: 14px;
