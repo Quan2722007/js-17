@@ -133,6 +133,9 @@ li {
     .container.show-nav {
         transform: rotate(-10deg);
     }
+    li {
+        font-size: 14px;
+    }
     .li_1 {
         padding-left: 5px;
     }
