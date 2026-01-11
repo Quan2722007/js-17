@@ -1,0 +1,131 @@
+html {
+    font-family: "Poppins";
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.69);
+    position: relative;
+    overflow-x: hidden;
+}
+.container {
+    transition: transform 0.5s linear;
+    transform-origin: top left;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 100px 250px;
+    background-color: white;
+}
+.container.show-nav {
+    transform: rotate(-20deg);
+}
+.title {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.title h1 {
+    margin: 0;
+    font-weight: 600;
+}
+.title h4 {
+    font-style: italic;
+    font-weight: 400;
+    opacity: 0.4;
+    margin: 0;
+}
+h3 {
+    margin: 0;
+    font-weight: 600;
+}
+.picture {
+    width: 200px;
+    height: 200px;
+}
+.box {
+    position: fixed;
+    top: -100px;
+    left: -100px;
+}
+.box .boxCircle {
+    background-color: #ff7979;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    position: relative;
+    transition: transform 0.5s linear;
+}
+.boxCircle button {
+    cursor: pointer;
+    position: absolute;
+    bottom: 40px;
+    left: 60%;
+    background: transparent;
+    border: 0;
+}
+.box button .icon {
+    width: 32px;
+    height: 32px;
+}
+.container.show-nav .boxCircle {
+    transform: rotate(-70deg);
+}
+#remove {
+    position: absolute;
+    left: 0px;
+    right: 84px;
+    height: 43px;
+}
+#nav {
+    position: fixed;
+    bottom: 60px;
+    left: 0;
+    z-index: -1;
+}
+#nav ul {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    list-style-type: none;
+}
+li {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 400;
+}
+.li_1 {
+    padding-left: 20px;
+    transition: transform 0.4s ease-in;
+    transform: translateX(-100%);
+}
+.li_2 {
+    padding-left: 30px;
+    transition: transform 0.6s ease-in;
+    transform: translateX(-90%);
+}
+.li_3 {
+    padding-left: 40px;
+    transition: transform 0.8s ease-in;
+    transform: translateX(-80%);
+}
+#nav ul li .iconNav {
+    width: 24px;
+    height: 24px;
+}
+.container.show-nav + nav ul li {
+    transform: translateX(0);
+}
