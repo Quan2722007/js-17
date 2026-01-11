@@ -54,6 +54,7 @@ h3 {
     height: 200px;
 }
 .box {
+    z-index: 150;
     position: fixed;
     top: -100px;
     left: -100px;
