@@ -134,12 +134,12 @@ li {
         transform: rotate(-10deg);
     }
     .li_1 {
-        padding-left: 10px;
+        padding-left: 5px;
     }
     .li_2 {
-        padding-left: 20px;
+        padding-left: 15px;
     }
     .li_3 {
-        padding-left: 30px;
+        padding-left: 25px;
     }
 }
