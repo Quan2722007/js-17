@@ -64,7 +64,7 @@ h3 {
     height: 200px;
     width: 200px;
     border-radius: 50%;
-    position: relative;
+    position: fixed;
     transition: transform 0.3s linear;
 }
 .boxCircle button {
@@ -79,8 +79,8 @@ h3 {
     width: 32px;
     height: 32px;
 }
-.container.show-nav .boxCircle {
-    transform: rotate(-70deg);
+.boxCircle.boxCircleChange {
+    transform: rotate(-90deg);
 }
 #remove {
     position: absolute;
@@ -107,17 +107,17 @@ li {
     color: #fff;
     font-size: 16px;
     font-weight: 400;
-    transition: transform 0.4s ease-in;
+    transition: transform 0.3s ease-in;
     transform: translateX(-100%);
 }
 .li_1 {
-    padding-left: 12px;
+    padding-left: 20px;
 }
 .li_2 {
-    padding-left: 22px;
+    padding-left: 30px;
 }
 .li_3 {
-    padding-left: 32px;
+    padding-left: 40px;
 }
 #nav ul li .iconNav {
     width: 24px;
@@ -132,5 +132,14 @@ li {
     }
     .container.show-nav {
         transform: rotate(-10deg);
+    }
+    .li_1 {
+        padding-left: 10px;
+    }
+    .li_2 {
+        padding-left: 20px;
+    }
+    .li_3 {
+        padding-left: 30px;
     }
 }
